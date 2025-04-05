@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -24,6 +25,19 @@ export default function Home() {
             Save and see your changes instantly.
           </li>
         </ol>
+
+        {/* Shadcn Button Test */}
+        <div className="flex flex-col gap-4 items-center">
+          <h2 className="text-xl font-bold">Shadcn/ui Button Test</h2>
+          <div className="flex gap-4 flex-wrap justify-center">
+            <Button variant="default">Default Button</Button>
+            <Button variant="destructive">Destructive</Button>
+            <Button variant="outline">Outline</Button>
+            <Button variant="secondary">Secondary</Button>
+            <Button variant="ghost">Ghost</Button>
+            <Button variant="link">Link</Button>
+          </div>
+        </div>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
